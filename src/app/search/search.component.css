@@ -1,0 +1,46 @@
+input{
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  border: 1px solid slategrey;
+  box-shadow: whitesmoke;
+}
+.dropdown-header{
+  background-color: deepskyblue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.dropdown-menu{
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: -20px;
+  position: absolute;
+  z-index: 100;
+}
+.dropdown-divider{
+  height: 1px;
+  width: 100%;
+  background-color: slategrey;
+}
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.dropdown a{
+  color: darkslategray;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.dropdown a:hover{
+  background-color: gainsboro;
+}
+.dropdown a.active{
+  background-color: gainsboro;
+}
+.search{
+  margin: 0 auto;
+  width: 50%;
+}

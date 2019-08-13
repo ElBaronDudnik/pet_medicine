@@ -1,0 +1,11 @@
+<div class="appointments-form" >
+  <header><span>+</span> Add appointment</header>
+  <form action="#" (ngSubmit)="addPet(addValue.value)" #addValue = "ngForm">
+    <input type="text" placeholder="Pet's Name" name="petName" ngModel>
+    <input type="text" placeholder="Owner's Name" name="ownerName" ngModel>
+    <input type="date" placeholder="Date of the appointment" name="aptDate" ngModel>
+    <input type="time" placeholder="Time of the appointment" name="aptTime" ngModel>
+    <input type="text" placeholder="Custom Notes" name="aptNotes" ngModel>
+    <button>Submit</button>
+  </form>
+</div>

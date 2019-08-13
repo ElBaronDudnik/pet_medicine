@@ -1,0 +1,10 @@
+<app-search (searchEvent)="search($event)" (changeOrderBy)="changeOrderBy($event)" (changeOrderType)="changeOrderType($event)"></app-search>
+<div class="pet-item" *ngFor = "let item of modifiedList">
+  <div class="pet-name" contenteditable="true" (input) = "changeName($event, item)">{{ item.petName | uppercase }}</div>
+  <div class="pet-owner">{{ item.ownerName }}</div>
+  <div class="apt-date">{{ item.aptDate  | date: 'MMM d, y h:mm a'}}</div>
+  <div class="apt-notes">{{ item.aptNotes }}</div>
+  <div class="delete-button" (click) = "deleteItem(item)">
+    <fa-icon [icon] = "faTimes"></fa-icon>
+  </div>
+</div>

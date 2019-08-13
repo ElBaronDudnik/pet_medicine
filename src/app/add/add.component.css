@@ -1,0 +1,33 @@
+.appointments-form{
+  background-color: aliceblue;
+  width: 50%;
+  margin: 20px auto;
+}
+header{
+  background-color: deepskyblue;
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+input{
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+}
+span{
+  font-size: 30px;
+  vertical-align: middle;
+}
+button{
+  background-color: aquamarine;
+  width: 100px;
+  border: none;
+  padding: 10px 20px;
+}

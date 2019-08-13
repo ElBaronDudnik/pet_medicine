@@ -1,0 +1,17 @@
+.pet-item{
+  background-color: linen;
+  color: darkslategray;
+  padding: 20px;
+  width: 50%;
+  margin: 10px auto;
+  position: relative;
+}
+.pet-name{
+  font-weight: 700;
+}
+.delete-button{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+<div class="search">
+  <input type="search" placeholder="Search" [(ngModel)] = "query" (keyup)="handleQuery(query)" >
+  <div class="dropdown-menu">
+    <div class="dropdown-header" (click) = "toggle()">SortBy  <fa-icon [icon] = "faAngleDown"></fa-icon></div>
+    <div class = "dropdown" *ngIf = "toggleDropdown">
+      <a class="sort-by" [ngClass] = "{'active': orderType === 'petName'}" (click) = "toggleOrderType('petName')">Pet Name</a>
+      <a class="sort-by" [ngClass] = "{'active': orderType === 'date'}" (click) = "toggleOrderType('date')">Date</a>
+      <a class="sort-by" [ngClass] = "{'active': orderType === 'ownerName'}" (click) = "toggleOrderType('ownerName')">Owner</a>
+      <div class="dropdown-divider" role="separator"></div>
+      <a class="sort-dir" [ngClass] = "{'active': orderBy === 'acs'}"  (click) = "toggleOrderBy('acs')">Acs</a>
+      <a class="sort-dir" [ngClass] = "{'active': orderBy === 'desc'}"  (click) = "toggleOrderBy('desc')">Desc</a>
+    </div>
+  </div>
+</div>
+
